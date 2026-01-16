@@ -84,15 +84,9 @@ YOLO-v11n-free-diving-detection/
 │   └── videos/
 ├── runs/                     ← 训练/验证/预测结果自动保存位置
 ├── README.md
-└── requirements.txt          （可选）
-数据集说明（请根据实际情况修改）
-
-数据来源：自采集 + 公开水下视频 + 部分网络素材
-图片数量：约 ×××× 张（训练/验证/测试 ≈ 8:1:1）
-场景覆盖：室内泳池、开放海域、不同水深、不同能见度、不同光照条件
-标注工具：Roboflow / CVAT / Label Studio 等
+└── requirements.txt 
 ```
-### 未来计划
+## 未来计划
  - 增加更多类别（浮潜、救生员、水下摄影师等）
  - 结合关键点/姿态估计，判断“黑屏”（breath-hold blackout）危险状态
  - 开发移动端实时演示（Android/iOS）
