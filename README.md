@@ -37,9 +37,11 @@ conda activate yolo11
 
 # 安装最新 ultralytics（建议使用最新版）
 pip install -U ultralytics
+```
 
 ### 2. 直接推理演示
-Pythonfrom ultralytics import YOLO
+```Python
+from ultralytics import YOLO
 
 # 加载模型（请替换成你自己的权重路径）
 model = YOLO("weights/best.pt")
@@ -57,12 +59,17 @@ model.predict(
     imgsz=640,
     half=True                      # 开启半精度加速（推荐）
 )
+```
+
 ### 3. 训练参考命令
-Bash# 单卡训练
+```Bash
+# 单卡训练
 yolo detect train model=yolo11n.pt data=dataset.yaml epochs=100 imgsz=640 batch=32 device=0
 
 # 多卡训练示例（4卡）
 yolo detect train model=yolo11n.pt data=dataset.yaml epochs=120 imgsz=640 batch=128 workers=16 device=0,1,2,3
+```
+
 项目结构（推荐组织方式）
 textYOLO-v11n-free-diving-detection/
 ├── dataset/
@@ -83,7 +90,7 @@ textYOLO-v11n-free-diving-detection/
 图片数量：约 ×××× 张（训练/验证/测试 ≈ 8:1:1）
 场景覆盖：室内泳池、开放海域、不同水深、不同能见度、不同光照条件
 标注工具：Roboflow / CVAT / Label Studio 等
-
+```
 ### 未来计划
 
 
