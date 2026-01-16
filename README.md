@@ -71,7 +71,8 @@ yolo detect train model=yolo11n.pt data=dataset.yaml epochs=120 imgsz=640 batch=
 ```
 
 项目结构（推荐组织方式）
-textYOLO-v11n-free-diving-detection/
+```text
+YOLO-v11n-free-diving-detection/
 ├── dataset/
 │   ├── images/
 │   ├── labels/
@@ -92,10 +93,8 @@ textYOLO-v11n-free-diving-detection/
 标注工具：Roboflow / CVAT / Label Studio 等
 ```
 ### 未来计划
-
-
- 增加更多类别（浮潜、救生员、水下摄影师等）
- 结合关键点/姿态估计，判断“黑屏”（breath-hold blackout）危险状态
- 开发移动端实时演示（Android/iOS）
- 尝试 YOLO11s/m 更大模型做精度上限对比
- 加入目标跟踪功能（ByteTrack/BoT-SORT）
+ - 增加更多类别（浮潜、救生员、水下摄影师等）
+ - 结合关键点/姿态估计，判断“黑屏”（breath-hold blackout）危险状态
+ - 开发移动端实时演示（Android/iOS）
+ - 尝试 YOLO11s/m 更大模型做精度上限对比
+ - 加入目标跟踪功能（ByteTrack/BoT-SORT）
